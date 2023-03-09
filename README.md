@@ -1,2 +1,2 @@
 # prakerja-repo-task
-prakerja altera academy berkarir sebagai backend engineer dengan golang 
+prakerja alterra academy berkarir sebagai backend engineer dengan golang 
