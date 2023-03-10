@@ -1,26 +1,30 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-//  menentukan bilang prima
-func isPrime(n int) bool {
-	if n <= 1 {
+// menentukan bilangan prima
+func isPrime(num int) bool {
+	if num <= 1 {
 		return false
 	}
-
-	for i := 2; i*i <= n; i++ {
-		if n%i == 0 {
+	for i := 2; i <= num/2; i++ {
+		if num%i == 0 {
 			return false
 		}
 	}
-
 	return true
 }
 
 func main() {
-	for i := 1; i <= 100; i++ {
-		if isPrime(i) {
-			fmt.Printf("%d ", i)
-		}
+	var num int
+	fmt.Print("Masukkan sebuah bilangan: ")
+	fmt.Scanln(&num)
+
+	if isPrime(num) {
+		fmt.Println(num, "adalah bilangan prima.")
+	} else {
+		fmt.Println(num, "bukan bilangan prima.")
 	}
 }
