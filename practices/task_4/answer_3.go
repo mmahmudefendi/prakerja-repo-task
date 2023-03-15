@@ -3,9 +3,13 @@ package main
 import "fmt"
 
 // menerima pointer dari array numbers yang berisi 6 angka inputan, dan mengembalikan 2 nilai berupa nilai maksimum dan minimum
+// referencing
+// numbers alamat memory
 func findMinMax(numbers *[6]int) (int, int) {
 	// Variabel max dan min diinisialisasi dengan nilai pertama pada array numbers
 	var max, min int
+	// dereferencing *numbers
+	// agar nilai aktual dari array yang diwakili oleh pointer numbers dapat diakses.
 	for i, n := range *numbers {
 		if i == 0 {
 			max, min = n, n
