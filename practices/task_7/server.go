@@ -1,12 +1,12 @@
 package main
 
 import (
-	"Product/routers"
+	"Product/routes"
 
 	"github.com/joho/godotenv"
 )
 
 func main() {
 	godotenv.Load()
-	routers.Api()
+	routes.Api()
 }
