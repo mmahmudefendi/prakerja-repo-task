@@ -13,7 +13,6 @@ import (
 var products []Models.Products
 
 func Index(c echo.Context) error {
-	var products []products
 	products := DB.Init().Find(&products)
 
 	fmt.Println("test: ", &products)
